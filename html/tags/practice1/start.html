@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>practice1 - start</title>
+        <!-- Add fevicon to the web site -->
+
+        <link rel="icon" href="data:image/png;base64,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"/>
+    </head>
+    <body>
+        
+        <!-- How to create a paragraph -->
+        <p>This is a Paragraph !</p>
+
+        <!-- Heading from h1 to h6 -->
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+       
+        <!--create two paragraph and take empty line between those two paragraph--> 
+        <p>Hello World , This is OM ARGADE</p>
+        <br/> 
+        <p>Currently i'm studing in MIT-WPU</p> 
+        
+        <!-- Nasted break , use break in line -->
+        
+        <p>Currently i'm studing in <br/>MIT-WPU</p> 
+        
+        <!-- Generate a link -->
+
+        <a href="https://github.com/X-om">MY GIT-HUB</a>
+        <br/>
+        <br/>
+
+        <!-- Generate a link and open the web page on new window -->
+
+        <a href="https://in.pinterest.com/omit2506/" target="_blank">MY Pintrest</a>
+        
+        <!-- import a image -->
+        <br/>
+        <br/>
+        <img
+        src="https://i.pinimg.com/1200x/39/c6/a8/39c6a84e91c564b9b44df6e8bc98aba4.jpg"
+        alt="My photo"
+        width="500"
+        height="300" 
+        />
+        <br/>
+
+        <!-- Add an Horizontal line  -->
+        <!-- by using hr tag (Horizontal rule) -->
+        <hr>
+
+        <p>
+            Yaar Tera<br> 
+            Superstar<br>
+            Desi <br>
+            Kalakar<br>
+        </p>
+
+        <!-- write the above texts in a same way without using p and br -->
+
+        <!-- pre tag (poet problem tag) -->
+
+        <pre>
+            Yaar Tera 
+            Superstar
+            Desi
+            Kalakar
+        </pre>
+        
+        <!-- change the color of text using inline css -->
+        <!-- inline css  -->
+        
+        <p style="color: red;">HELLO FRIENDS MY NAME IS OM ARGADE , I'M FROM PUNE !</p>
+
+        <!-- change the background color of text  -->
+
+        <p style="background-color:gray;">HELLO FRIENDS MY NAME IS OM ARGADE , I'M FROM PUNE !</p>
+
+        <!-- change the background color of text  only until the text -->
+        <p style="background-color:gray; display: inline-block;">HELLO FRIENDS MY NAME IS OM ARGADE , I'M FROM PUNE !</p>
+
+        <!-- change the font size -->
+        <p style="font-size: large;">HELLO FRIENDS MY NAME IS OM ARGADE , I'M FROM PUNE !</p>
+
+        <!-- change the font family or font of the text -->
+        <p style="font-family:fantasy; font-size: large;">HELLO FRIENDS MY NAME IS OM ARGADE , I'M FROM PUNE !</p>
+        
+        <!-- allign the text at center -->
+
+        <p style="text-align: center;">HELLO FRIENDS MY NAME IS OM ARGADE , I'M FROM PUNE !</p>
+
+        <!-- formating - bold italic small large del mark sup sub-->
+
+        <b>This is a new paragraph for <i>formating</i></b>
+        <br>
+        <b>THIS IS NEW <mark style="color: white;background-color: black;">BOLD</mark></b><br><br>
+        
+        <i>THIS IS NEW <mark>ITALIC</mark></i><br><br>
+        
+        <small>THIS FOR SMALL</small><br><br>
+        
+        <large>THIS FOR LARGE</large>
+        
+        <br><br>
+        
+        <del>THIS IS NEW DEL </del><br><br>
+        
+        <p> X<sup>2</sup> + Y<sup>2</sup> = Z<sup>3</sup></p>
+        
+        <p> A<sub>2</sub>+B<sub>2</sub>= Z<sub>3</sub></p>
+
+        <u>THIS IS FOR UNDERLINE</u>
+
+        <!-- create a orderd list  -->
+        <ol>
+            <li>item A</li>
+            <li>item B</li>
+            <li>item C</li>
+        </ol>
+
+        <!-- create a unorder list -->
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+
+        <!-- create a list inside a list (nested list) -->
+
+        <ul>
+            <li>PANEER</li>
+            <li>CHICKEN</li>
+            <ol>
+                <li>SHAHI PANEER</li>
+                <li>CHICKEN FRY</li>
+            </ol>
+        </ul>
+
+
+
+
+
+        <!-- create a desciption list  -->
+        <dl>
+            <dt>Item 1</dt>
+            <dd>This is a decription about item 1</dd>
+            
+            <dt>Item 2</dt>
+            <dd>This is a decription about item 2</dd>
+            
+             <dt>Item 3</dt>
+            <dd>This is a decription about item 3</dd>
+
+        </dl>
+
+    </body>
+</html>

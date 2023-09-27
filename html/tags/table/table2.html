@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    h1{
+        text-align: center;
+    }
+    table,tr,td{
+        margin-left: auto;
+        margin-right: auto;     
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 30px;
+    }
+    th{
+        padding: 30px;
+        border: 1px solid black ;
+    }
+    thead{
+        font-weight: 1000;
+        font-size: large;
+        background-color: brown;
+        color: white;
+        border: 1px solid black;
+    }
+    tbody{
+        font-weight: 300;
+        font-size: 22px;
+        font-style: italic;
+        background-color: beige;
+    }
+    tfoot{
+        font-weight: 300;
+        font-size: 22px;
+        background-color: gray;
+        color: white;
+
+    }
+    
+
+</style>
+<body>
+    <!-- in this doc we will follow best practices for table -->
+
+    <h1><b>MY SECOND TABLE</b></h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>MONTH</th>
+                <th>SAVING</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jan</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>Feb</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>March</td>
+                <td>3000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>6000</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+</html>

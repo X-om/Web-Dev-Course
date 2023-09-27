@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Animation</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+       .card1{
+        width: 300px;
+        height: 500px;
+        position: relative;
+       }
+
+       .image1,.image2{
+        background-color: lightblue;
+        position: absolute;
+        top: 20px;
+        left: 50px; 
+        transform: rotateY(50deg);
+        transform: rotateX(10deg);
+        transform: rotateZ(10deg);
+        transition: top 1s,left 1s; 
+        transition: 2s;
+        border-radius: 20px;
+       }
+       .image1{
+        border: 1px solid green;
+        filter: brightness(1);
+        filter: drop-shadow(10px 10px 100px green);
+        z-index: 2;
+       }
+       .image2{
+        left: 150px;
+        border: 1px solid rgb(157, 1, 157);
+        filter: brightness(1);
+        filter: drop-shadow(10px 10px 50px rgb(157, 1, 157));
+        z-index: 1;
+        }
+
+       .card1:hover .image1{
+        transform: rotateY(200deg);
+        top: 100px;
+        left: 100px;
+        animation: moveElement 4s linear infinite;
+       }
+
+       .card1:hover .image2{
+        transform: rotateY(200deg);
+        top: 200px;
+        left: 400px;
+       }
+       h1{
+        text-align: right;
+        font-size: 100px;
+       }
+       .main{
+            position: absolute;
+            right: 100px;
+            filter: contrast(1.1);
+            filter: saturate(1);
+            mix-blend-mode:screen;
+       }
+       .textfield{
+        color: white;
+        font-size: 30px;
+        
+       }
+       #text{
+        width: 15cm;
+        height: 1cm;   
+        border-radius: 25PX; 
+        font-size: large;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+        
+       }
+       
+</style>
+<body>
+    <h1 style="color: whitesmoke;">RORONOA ZORO</h1>
+    <div class="main">
+        <img
+        src="https://image.winudf.com/v2/image1/Y29tLm1vYndhbGxwYXBlci56b3JvYW5pbWV3YWxscGFwZXJzazA1X3NjcmVlbl80XzE2NjU3MjY1MjJfMDQ3/screen-4.webp?fakeurl=1&type=.webp"
+        alt="MAIN IMAGE"
+        height="1000PX"
+        >
+    </div>
+        <div class="card1">
+        
+        <img 
+            src="https://e0.pxfuel.com/wallpapers/396/216/desktop-wallpaper-zoro-art-organism.jpg" 
+            alt="card"
+            class="image1"  
+            width="300"
+            height="500"   
+        >    
+        <img src="https://e1.pxfuel.com/desktop-wallpaper/547/374/desktop-wallpaper-roronoa-zoro-by-portgasdbrand-zoro-dark.jpg" 
+            alt="card 2"
+            class="image2"
+            width="300"
+            height="500"
+            >
+        </div>
+        <br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="textfield">
+            <label for="text" id="label">Search : </label>
+            <input type="text" name="text" id="text" placeholder="search anime name">
+        
+        </div>
+</body>
+</html>

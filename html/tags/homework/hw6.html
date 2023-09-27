@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork-6</title>
+</head>
+<style>
+    table{
+        border-collapse: collapse;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 30px;
+    }
+    th:nth-child(1),thead:nth-child(1){
+        background-color: rgb(146, 161, 204);
+        
+    } 
+    tbody{
+        color: white;
+        font-size: larger;
+        background-color: rgba(0, 0, 0, 0.91);
+        border-collapse: collapse;
+    }
+    input,select,textarea{
+        padding: 5px;
+        background-color: rgb(204, 228, 247);
+        border-style: none;
+        border-radius: 8px;
+    }
+    tfoot{
+        padding: 30px;
+        font-size: larger;
+        background-color: rgb(146, 161, 204);
+    }
+    
+</style>
+<body>
+    <div class="all-elm">
+    <h1 style="text-align: center;">Welcome To My Page</h1>
+    <form action="">
+        <table align="center">
+            <thead align="center" style="font-size: 30px;">
+                <th colspan="3">Contact Us From</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="right">
+                        <label for="name">Name :</label>
+                    </td>
+                    <td>
+                        <input type="name" name="name" placeholder="Name" style="width: 200px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="email">Email :</label></td>
+                    <td>
+                        <input type="email" name="email" placeholder="Email" style="width: 200px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="contactNo">Contact Number :</label>
+                    </td>
+                    <td>
+                        <input type="tel" name="contactNo" placeholder="Phone No" style="width: 200px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="Gender">Select Gender :</label>
+                    </td>
+                    <td align="left">
+                        <select name="Gender" id="Gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="date">Date Of Birth :</label>
+                    </td>
+                    <td>
+                        <input type="date" name="date" id="date" value="1999-01-01" max="2024-01-01">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="buttons">Ratings :</label>
+                    </td>
+                    <td>
+                        <div name="buttons">   
+                            <label for="1">1</label>
+                            <input type="radio" name="button">
+                            <label for="2">2</label>
+                            <input type="radio" name="button">
+                            <label for="3">3</label>
+                            <input type="radio" name="button">
+                            <label for="4">4</label>
+                            <input type="radio" name="button">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="message">Enter your message : </label><br>
+                    </td>
+                    <td>
+                        <textarea id = "textarea" rows="5" cols="33" placeholder="Enter your message"></textarea>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="send" style="width: 50px; height: 25px;">
+                        <input type="reset" value="reset" style="width: 50px; height: 25px;">
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+                   
+    </form>
+    </div>
+</body>
+</html>
