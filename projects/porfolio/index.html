@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OM ARGADE</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div class="front1">
+
+        <div class="element">
+            <div class="element-inner">
+               <div class="nav-bar">
+                <div class="logo">
+                    <div class="logo-inner">
+                     <a href="">
+                        <img 
+                            src="logo.png" 
+                            alt="logo"
+                            width="200px"
+                            style="transform: rotateZ(-40deg); filter: drop-shadow(10px 10px 8px black);"
+                            >
+                     </a>
+                    </div>
+                </div>
+               </div>
+            </div>
+            <div class="element-inner" style="margin-top: 40px;">
+                <div class="nav-bar">
+                    <div class="home">
+                        <div class="home-inner">
+                            <a href="">Home</a>
+                        </div> 
+                    </div>
+                </div>
+    
+                <div class="nav-bar">
+                    <div class="about">
+                        <div class="about-inner">
+                            <a href="">About</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="nav-bar">
+                    <div class="portfolio">
+                        <div class="portfolio-inner">
+                            <a href="">Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="nav-bar">
+                    <div class="contactme">
+                        <div class="contactme-inner">
+                            <a href="">Contact Me</a>
+                        </div>
+                    </div>
+                </div>          
+            </div>
+            <div class="element-inner" style="margin-top: 40px;">
+                <div class="nav-bar">
+                    <div class="hireme">
+                        <div class="hireme-inner">
+                            <button>Hire Me</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="element2">
+            <div class="element2-inner">
+                <div class="element2-info">
+                    <div class="head1">
+                        <h1>I'm Om Argade</h1>
+                    </div>
+    
+                    <div class="paragraph1">
+                        <p>My name is Om Argade, and I'm currently pursuing a Bachelor of Technology (B.Tech) degree in Computer Science and Engineering at MIT WPU. It's an exciting journey filled with endless opportunities to learn, grow, and explore the ever-evolving world of technology. With the guidance of dedicated professors and the support of my fellow students, I'm looking forward to acquiring the knowledge and skills necessary to make a meaningful impact in the field of computer science.</p>
+                        <div class="Learn-More">
+                            <a href="" style="color: rgb(88, 88, 232);">Learn More</a>
+                        </div>
+        
+                    </div>
+
+                 
+                </div>
+
+                <div class="element2-photo">
+                    <div class="photo1">
+                            <img 
+                            src="luffy.png" 
+                            alt="luffy"
+                            height="800px"
+                            id="luffy"
+                            >
+                    </div>
+                </div>
+            </div>
+
+            <div class="element2-text-animation">
+                <div class="texts text-animation">
+                        <h2 class="letter letter-animation">Hello There !</h2>
+                </div>
+            </div>
+                   
+            </div>
+        </div>
+
+    
+        <script>
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    const texts = entry.target.querySelector('.letter');
+                    if(entry.isIntersecting){
+                        texts.classList.add('letter-animation');
+                        observer.unobserve(document.querySelector('.texts'));
+                        return;
+                    }
+
+                    texts.classList.remove('letter-animation');
+                  
+                });
+            });
+
+            observer.observe(document.querySelector('.texts'));
+            
+
+        </script>
+    </div>
+</body>
+</html>

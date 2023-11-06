@@ -6,26 +6,30 @@
     <title>Card Animation</title>
 </head>
 <style>
+    html{
+        scroll-behavior: smooth;
+    }
     body{
         background-color: black;
+        margin: 0;
+       
+        
     }
        .card1{
         width: 300px;
         height: 500px;
-        position: relative;
+        position:relative;
+        transform: rotateY(400deg);
+       
        }
-
+      
        .image1,.image2{
         background-color: lightblue;
         position: absolute;
         top: 20px;
         left: 50px; 
-        transform: rotateY(50deg);
-        transform: rotateX(10deg);
-        transform: rotateZ(10deg);
-        transition: top 1s,left 1s; 
-        transition: 2s;
         border-radius: 20px;
+        transition: left 0.5s, top 0.5s;;
        }
        .image1{
         border: 1px solid green;
@@ -40,19 +44,39 @@
         filter: drop-shadow(10px 10px 50px rgb(157, 1, 157));
         z-index: 1;
         }
+        @keyframes image1automove{
+            from{
+                top: 20px;
+                left: 50px; 
+            }
+            to{
+                top: 100px;
+                left: 150px;
+                transform: rotateY(360deg);
+            }
+        }
+        @keyframes image2automove{
+            from{
+                top: 20px;
+                left: 150px; 
+            }
+            to{
+                top: 200px;
+                left: 400px;
+                transform: rotateY(360deg);
+            }            
+        }
+        .image1{
+            animation: image1automove 4s;
+            top: 100px;
+            left: 150px;
+        }
+        .image2{
+            animation: image2automove 5s;
+            top: 200px;
+            left: 400px;
+        }
 
-       .card1:hover .image1{
-        transform: rotateY(200deg);
-        top: 100px;
-        left: 100px;
-        animation: moveElement 4s linear infinite;
-       }
-
-       .card1:hover .image2{
-        transform: rotateY(200deg);
-        top: 200px;
-        left: 400px;
-       }
        h1{
         text-align: right;
         font-size: 100px;
@@ -64,9 +88,12 @@
             filter: saturate(1);
             mix-blend-mode:screen;
        }
+
        .textfield{
         color: white;
         font-size: 30px;
+        display: inline;
+        
         
        }
        #text{
@@ -80,6 +107,7 @@
        }
        
 </style>
+
 <body>
     <h1 style="color: whitesmoke;">RORONOA ZORO</h1>
     <div class="main">
@@ -89,7 +117,7 @@
         height="1000PX"
         >
     </div>
-        <div class="card1">
+        <div class="card1 card-animation">
         
         <img 
             src="https://e0.pxfuel.com/wallpapers/396/216/desktop-wallpaper-zoro-art-organism.jpg" 
@@ -107,10 +135,24 @@
         </div>
         <br>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <div class="textfield">
+        <div class="textfield" id="tex">
             <label for="text" id="label">Search : </label>
             <input type="text" name="text" id="text" placeholder="search anime name">
         
         </div>
+
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded",function(){
+                setTimeout(function(){
+                    const scrollTarget = document.getElementById("tex");
+                    if(scrollTarget){
+                        scrollTarget.scrollIntoView({behavior:"smooth"});
+                    }
+
+                },1500);
+            });
+        </script>
 </body>
 </html>

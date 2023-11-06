@@ -1,0 +1,139 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.front1{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(225, 222, 222);
+}
+.element{
+    /* border: 1px solid black; */
+    display: flex;
+    height: min-content;
+    flex-direction: row;
+    gap: 20%;
+}
+.element-inner{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    width: fit-content;
+}
+.nav-bar{
+
+    /* border: 1px solid black;
+    margin: 10px; */
+    width: fit-content;
+}
+
+.logo,.home,.about,.portfolio,.contactme,.hireme{
+    /* border: 1px solid black; */
+    width: fit-content;
+    margin-top: 15px;
+}
+.logo-inner,.home-inner,.about-inner,.portfolio-inner,.contactme-inner,.hireme-inner{
+    /* border: 1px solid black; */
+    text-align: center;
+    font-size: large;
+    font-family:sans 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.head1{
+    opacity: 0;
+    transform: translateY(-50%);
+    animation: slide-down 3s forwards;
+}
+@keyframes slide-down {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.element2{
+    /* border: 1px solid black; */
+    width: 100%;
+}
+.element2-inner{
+    /* border: 1px solid black; */
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.element2-info{
+    /* border: 1px solid black; */
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    width: 50%;
+}
+.element2-photo{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    width: 50%;
+}
+
+.head1,.paragraph1,.photo1{
+    width: fit-content;
+    /* border: 1px solid black; */
+    font-size: 50px;
+}
+.paragraph1{
+    font-size: 25px;
+    color: rgb(56, 56, 56);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5px;
+}
+.Learn-More{
+    font-family:'Times New Roman', Times, serif;
+    font-size: large;
+}
+.element2-text-animation{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.texts{
+    display: flex;
+    width: 100%;
+    margin-right: 120px;
+}
+.text-animation{
+    font-size: 50px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.letter{
+    display: inline;
+    width: 100%;
+    text-align: right; 
+}
+.letter-animation{
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slide-in 2s forwards;
+}
+@keyframes slide-in{
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
